@@ -14,7 +14,7 @@ The fitted ODE is:
 
 $$
 \frac{dN}{dt}
-= \left[p(t) + q(t)\frac{N(t)}{K(t)}\right]\,N(t)\left(1-\frac{N(t)}{K(t)}\right).
+= \left[p(t) + q(t)\frac{N(t)}{K(t)}\right] N(t)\left(1-\frac{N(t)}{K(t)}\right).
 $$
 
 The coefficient functions are **linear in normalized drivers**:
@@ -80,7 +80,7 @@ MAKE SURE YOU ARE IN THE CORRECT PATH, YOU SHOULD SEE ALL FILES FROM THE REPOSIT
 
 ## 5) Function Reference for new_fit4.py
 
-This section documents the main functions in `new_fit4.py` in a consistent “role / inputs / outputs / algorithm notes” format.
+This section documents the main functions in `new_fit4.py` in a “role / inputs / outputs / algorithm notes” format.
 
 ---
 
@@ -329,7 +329,7 @@ $$
 - `dict[str, np.ndarray]`: scenario name → simulated curve.
 - Writes per-scenario CSVs to `output_results/scenario_<name>.csv`.
 
-**Scenario spec format (typical)**
+**Scenario spec format**
 ```python
 scenarios = {
   "baseline": {},
